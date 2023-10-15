@@ -27,12 +27,12 @@ let calculate = function() {
     let secondInputValue = d.querySelector('#second').value;
     let output = d.querySelector('#output');
     
-    firstInputValue === '' ? firstInputValue = 0 : firstInputValue;
-    secondInputValue === '' ? secondInputValue = 0 : secondInputValue;
+    firstInputValue === '' ? firstInputValue = 0 : parseFloat(firstInputValue);
+    secondInputValue === '' ? secondInputValue = 0 : parseFloat(secondInputValue);
 
     let summ = 0;
     switch (currentOperation) {
-        case '+' : summ = parseFloat(firstInputValue) + parseFloat(secondInputValue);
+        case '+' : summ = firstInputValue + secondInputValue;
         break;
         case '-' : summ = firstInputValue - secondInputValue;
         break;
