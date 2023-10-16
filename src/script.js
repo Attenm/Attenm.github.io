@@ -61,6 +61,10 @@ d.querySelector('.equal_button').addEventListener('click', calculate);
 d.querySelector('#ac').addEventListener('click', clearAll);
 d.querySelector('#ac').addEventListener('click', delClassActive);
 
+//reset opeartion;
+d.querySelector('#ac').addEventListener('click', () => currentOperation = '+');
+
+
 // Перехід на наступний інпут якщо натиснуто Enter
 
 d.querySelector('#first').addEventListener('keyup', (event) => {
@@ -68,6 +72,7 @@ d.querySelector('#first').addEventListener('keyup', (event) => {
         d.querySelector('#second').focus();
     }
 })
+
 
 
 
