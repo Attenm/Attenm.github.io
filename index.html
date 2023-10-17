@@ -9,22 +9,25 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1 class="header">Simple Calculator</h1>
-        <div class="inner_container">
-            <input id="first" class="input" type="number">
-            <input id="second" class="input" type="number">
-            <div class="buttons">
-                <div class="button">-</div>
-                <div class="button">+</div>
-                <div class="button">*</div>
-                <div class="button">/</div>
-                <div class="button">
-                    <span class="equal_button">=</span>
+        <div class="calculator">
+            <h1 class="header">Simple Calculator</h1>
+            <div class="inner_container">
+                <input id="first" class="input" type="number">
+                <input id="second" class="input" type="number">
+                <div class="buttons">
+                    <div class="button">-</div>
+                    <div class="button">+</div>
+                    <div class="button">*</div>
+                    <div class="button">/</div>
+                    <div class="button">
+                        <span class="equal_button">=</span>
+                    </div>
+                    <div id="ac" class="button">AC</div>
                 </div>
-                <div id="ac" class="button">AC</div>
+                <input id="output" class="output" type="text" disabled value="0">
             </div>
-            <input id="output" class="output" type="text" disabled value="0">
         </div>
+        
     </div>
     <script src="src/script.js"></script>
 </body>
