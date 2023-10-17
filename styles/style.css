@@ -115,9 +115,8 @@ background-color: #b61132;
 
 .calculations-history__button-close {
     display: inline-block;
-    font-size: 25px;
+    font-size: 18px;
     position: absolute;
-    font-size: 14px;
     z-index: 4;
     font-weight: bolder;
     padding-inline: 3px;  
@@ -128,7 +127,8 @@ background-color: #b61132;
 
 .calculations-history__item {
     border-bottom: 1px solid #3d4757;
-    line-height: 1.3em;
+    line-height: 1.5em;
+    font-size: 20px;
     padding-left: 40px;
     max-width: 100%;
 }
