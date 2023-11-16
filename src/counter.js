@@ -6,7 +6,7 @@ const input = wrapper.querySelector('input');
 const output = wrapper.querySelector('.display__result');
 
 input.addEventListener('input', (event) => {
-    const regExp = /\D/g;
+    const regExp = /\D\./g;
     event.target.value = event.target.value.replace(regExp, '');
 })
 
