@@ -1,5 +1,8 @@
 .counter__body {
     background-color: rgb(162, 162, 162);
+    background-image: url(../icons/ai-generated-calculator.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 400px;
     width: 70%;
     margin: 30px auto;
