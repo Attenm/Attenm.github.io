@@ -11,14 +11,28 @@ input.addEventListener('input', (event) => {
 })
 
 
+let timer;
 input.addEventListener('change', (event) => {
+
+    let timerStart = function() {
+        timer = setInterval(() => {
+            result += valuePerSec;
+            output.innerText = result.toFixed(2);
+        }, 1000);
+    }
+
     let value = +event.target.value;
     let valuePerSec = value / 60 / 60;
-
     let result = 0;
-    setInterval(() => {
-        result += valuePerSec;
+    
+    if (timer) {
+        clearTimeout(timer);
         output.innerText = result.toFixed(2);
-    }, 1000);
-
+        timerStart();
+    } else {
+        timerStart();
+    }
 })
+
+
+
