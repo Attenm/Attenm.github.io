@@ -1,0 +1,80 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6f2c2c;
+    background-image: url(../icons/jym_bg.jpg);
+}
+
+.app-window {
+    font-size: 1.3em;
+    height: 90vh;
+    width: 80vw;
+    border-radius: 10px;
+    background-color: #cecece;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+.person-info input {
+    width: 100%;
+    line-height: 28px;
+    font-family: inherit;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    font-size: inherit;
+}
+
+.save {
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #2b6380;
+    border-radius: 5px;
+    padding: 3px 0;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.save:hover {
+    background-color: #3e718b;
+}
+
+.info {
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.edit-btn {
+    width: fit-content;
+    background-color: rgb(204, 184, 68);
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 0;
+    padding: 4px 10px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 37px);
+}
