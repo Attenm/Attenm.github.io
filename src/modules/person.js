@@ -63,6 +63,9 @@ export class Person {
         this.bmi = this.weight / ((this.height / 100)**2);
         localStorage.setItem('user-bmr', this.bmr);
         localStorage.setItem('user-bmi', this.bmi.toFixed(2));
+        localStorage.setItem('user-weight', this.weight);
+        localStorage.setItem('user-age', this.age);
+        localStorage.setItem('user-height', this.height);
         this.hideWindow();
         new Stat('.app-window').create()
     }

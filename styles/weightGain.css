@@ -16,17 +16,15 @@
 
 .app-window {
     font-size: 1.3em;
-    height: 90vh;
-    width: 80vw;
+    height: 95vh;
+    width: 95vw;
     border-radius: 10px;
-    background-color: #cecece;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #E1E4CE;
+    overflow: hidden;
 }
 
 .person-info {
+    margin: 100px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -65,18 +63,69 @@
     flex-direction: column;
 }
 
-.edit-btn {
-    width: fit-content;
-    background-color: rgb(204, 184, 68);
-    border: 1px solid black;
-    border-radius: 5px 5px 5px 0;
-    padding: 4px 10px;
+
+.header__info {
+    display: flex;
 }
 
-.text-box {
+.header__tile {
+    padding: 5px 0;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.header__tile:nth-child(1) {
+    background-color: #D2D2D2;
+}
+
+.header__tile:nth-child(2){
+    background-color: #8DC9EB;
+}
+
+.header__tile:nth-child(3){
+    background-color: #8DEBB2;
+}
+
+.edit-btn {
+    color: #99FF49;
+    background-color: #245E7E;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.forecast__container {
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: calc(100% - 37px);
+    gap: 40px;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.btn__forecast {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.btn__forecast:nth-child(1){
+    background-color: #70E2EA;
+    color: #0500FF;
+}
+.btn__forecast:nth-child(2){
+    background-color: #EADE70;
+    color: #932525;
+}
+.btn__forecast:nth-child(3){
+    background-color: #EA8670;
+}
+.btn__forecast:nth-child(4){
+    background-color: #FF5C5C;
 }
