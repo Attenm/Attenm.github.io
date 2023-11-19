@@ -56,6 +56,9 @@ export class Stat {
     editInfo() {
         localStorage.removeItem('user-bmr');
         localStorage.removeItem('user-bmi');
+        localStorage.removeItem('user-weight');
+        localStorage.removeItem('user-age');
+        localStorage.removeItem('user-height');
         
         this.mainPage.remove();
         new Person('.app-window').create();

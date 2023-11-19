@@ -129,3 +129,63 @@
 .btn__forecast:nth-child(4){
     background-color: #FF5C5C;
 }
+
+.result__page {
+    padding: 10px;
+}
+
+
+.exit {
+    position: relative;
+    width: fit-content;
+    padding: 3px 10px;
+    font-size: 20px;
+    background-color: #70E2EA;
+    margin-left: 50px;
+}
+
+
+.exit::before {
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../icons/Polygon\ 1.svg);
+    background-repeat: no-repeat;
+}
+
+.week__table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-top: 80px;
+}
+
+.week__table thead {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.week__table th {
+    color: white;
+    background-color: #000000;
+    padding: 3px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.week__table tr {
+    font-size: 16px;
+    text-align: center;
+}
+
+.week__table td {
+    padding: 2px;
+    background-color: #e1f3ff;
+    border-bottom: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+}

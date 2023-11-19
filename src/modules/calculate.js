@@ -51,7 +51,9 @@ export class CalculateWeek {
     }
 
     addBtnExit() {
-        this.page.insertAdjacentHTML('afterbegin', '<div class="exit">Вернуться на главную</div>');
+        let html = `<div class="exit">Вернуться на главную</div>`;
+
+        this.page.insertAdjacentHTML('afterbegin', html);
         this.page.querySelector('.exit').addEventListener('click', () => {
             new Stat('.app-window').create();
             this.page.remove();
@@ -59,12 +61,12 @@ export class CalculateWeek {
     }
 
     generateTable(html = ''){
-        html = `<table class="weeek__table">
+        html = `<table class="week__table">
             <thead>
                 <tr>
                     <th>День:</th>
                     <th>Обмен вещ-в (Ккал.)</th>
-                    <th>Прибавка за период (гр)</th>
+                    <th>Прибавка за период (кг)</th>
                     <th>Вес общ.</th>
                 </tr>
             </thead>
